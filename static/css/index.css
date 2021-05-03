@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;1,500&display=swap');
+* {
+  font-family: 'Ubuntu', sans-serif;
+  
+}
+html{
+  overflow:hidden;
+}
+body {
+  background: #210124;
+  background: rgb(33, 1, 36);
+  background: linear-gradient(
+    127deg,
+    rgba(33, 1, 36, 1) 27%,
+    rgba(117, 13, 55, 1) 72%
+  );
+  background-size: 150% 150%;
+  animation: move 3000ms ease-in-out infinite;
+  overflow: hidden;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow:hidden;
+}
+.textss {
+  background: rgb(33, 1, 36);
+  background: linear-gradient(
+    302deg,
+    rgba(33, 1, 36, 1) 27%,
+    rgba(117, 13, 55, 1) 72%
+  );
+  width: 60%;
+  border-radius: 7vh;
+  height: 80vh;
+  position: inherit;
+  justify-content: center;
+  align-items: center;
+}
+
+#items {
+  position: relative;
+  top: 9%;
+  left: 5%;
+}
+::placeholder {
+  color: rgb(75, 74, 74);
+  font-size: smaller;
+}
+#header1 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 3em;
+  font-weight: bolder;
+  justify-content: center;
+  left: 5%;
+  top: 5%;
+  position: relative;
+  color: #b3dec1;
+  width:70%;
+}
+.dropdown {
+  border-style: none;
+}
+
+#dropp,
+#dropp3 {
+  overflow: visible;
+  color: #b3dec1;
+  border-radius: 1vh;
+}
+#dropp2 {
+  overflow: visible;
+  color: #b3dec1;
+  border-radius: 1vh;
+}
+#dropp:hover,
+#dropp2:hover,
+#dropp3:hover {
+  background: linear-gradient(
+    127deg,
+    rgba(179, 222, 193, 1) 29%,
+    rgba(90, 194, 138, 1) 99%
+  );
+  color: black;
+}
+#ddm {
+  overflow-y: scroll;
+  max-height: 16vh;
+  white-space: nowrap;
+  background-color: transparent;
+  text-align: left;
+  /* border-color: rgb(33,1,36);
+    border-width: 2px; */
+  border-style: none;
+}
+ #ddm::-webkit-scrollbar {
+
+  width: 10px;
+
+}
+
+#ddm::-webkit-slider-thumb{
+  background-color: rgb(204, 204, 204);
+  border-radius: 3vh;
+}
+#dmm::-webkit-scrollbar-track {
+  background:rgba(255, 255, 255, 0.76);        /* color of the tracking area */
+}
+.buttons {
+  position: relative;
+  left: 75%;
+  top: 10%;
+}
+#button11,
+#buttons11 {
+  
+  border-radius: 1vh;
+  border-style: none;
+  padding: 15px 32px;
+  background: rgb(179, 222, 193);
+  background: linear-gradient(
+    127deg,
+    rgba(179, 222, 193, 1) 29%,
+    rgba(90, 194, 138, 1) 99%
+  );
+  cursor: pointer;
+}
+#room,
+#username {
+  position: relative;
+  background-color: transparent;
+  border-style: none;
+  cursor: default;
+  color: rgb(179, 222, 193);
+  left: 10px;
+  display: none;
+}
+#dropdownMenuButton {
+  position: relative;
+  top: 40px;
+  left: 4%;
+  background-color: transparent;
+  outline-style: none;
+  border-style: none;
+  font-weight: medium;
+  color: rgb(179, 222, 193);
+  font-size: larger;
+}
+#button11:hover,
+#buttons11:hover {
+  background-size: 150% 150%;
+  animation: move 3000ms ease-in-out infinite;
+}
+.join {
+  position: relative;
+  left: 55%;
+  top: 20px;
+}
+#join {
+  border-radius: 1vh;
+  border-style: none;
+  padding: 15px 65px;
+  background: rgb(179, 222, 193);
+  background: linear-gradient(
+    127deg,
+    rgba(179, 222, 193, 1) 29%,
+    rgba(90, 194, 138, 1) 99%
+  );
+  cursor: pointer;
+}
+#join:hover {
+  background-size: 150% 150%;
+  animation: move 3000ms ease-in-out infinite;
+}
+#help{
+  position: relative;
+  color: #b3dec1;
+  top:100px;
+  left:100px;  
+  font-size: large;
+ text-decoration:none;
+}
+.modal-content{
+  background: linear-gradient(
+    127deg,
+    rgba(179, 222, 193, 1) 29%,
+    rgb(47, 199, 118) 99%
+  );
+  color:black;
+}
+#moda-button{
+  border-style: none;
+  background: linear-gradient(
+    302deg,
+    rgba(33, 1, 36, 1) 27%,
+    rgba(117, 13, 55, 1) 72%
+  );
+  width: 100px;
+}
+#moda-button2{
+  border-style:none;
+  background-color: rgb(97, 97, 97);
+}
+#moda-button:hover{
+  background-size: 150% 150%;
+  animation: move 3000ms ease-in-out infinite;
+}
+.modal-body input{
+  
+  font-style: none;
+  outline-style: none;
+  font-size: 150%;
+  width: 80%;
+  border-radius: 1vh;
+  color: #b3dec1;
+  background: linear-gradient(
+    233deg,
+    rgba(179, 222, 193, 1) 29%,
+    rgb(47, 199, 118) 99%
+  );
+  position:relative;
+  border-style:solid;
+  border-color:rgba(33, 1, 36, 1);
+  left:10px;
+  height:7vh;
+  color:rgba(33, 1, 36, 1);
+   
+  
+}
+#exampleModalLabel{
+  background: linear-gradient(
+    302deg,
+    rgba(33, 1, 36, 1) 27%,
+    rgba(117, 13, 55, 1) 72%
+  );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 150% 150%;
+    animation: move 3000ms ease-in-out infinite;
+}
+#room-members{
+  position:relative;
+  top:20px;
+}
+.modal-body{
+  height:25vh;
+}
+@keyframes move {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@media only screen and (max-width: 890px) {
+  .textss{
+    width:100%;
+    border-radius: 7vh;
+  }
+  .buttons{
+    top:20px;
+    left:65%;
+    border-radius: 7vh;
+    
+  }
+  #button11,
+#buttons11 {
+  border-radius: 7vh;
+  background-size: 150% 150%;
+  animation: move 3000ms ease-in-out infinite;
+}
+.join{
+  left:20%;
+  
+  margin-top:140px;
+}
+#join{
+  border-radius: 7vh;
+  background-size: 150% 150%;
+  animation: move 3000ms ease-in-out infinite;
+}
+body{
+background-size:300% 300%;
+}
+}
+
+@media only screen and (max-width: 360px){
+  .join{
+    left:90%;
+    
+    top:-20px;
+  }
+  #join{
+    padding: 15px 35px;
+  }
+  #ddm{
+    background-color: rgba(255, 255, 255, 0.274);
+  }
+  #help{
+    left:20px;
+  }
+}
+@media only screen and (max-width: 320px){
+  #help{
+    left:0px;
+  }
+  .join{
+    left:50%;
+    
+    margin-top:0px;
+  }
+  #ddm{
+    background-color: rgba(255, 255, 255, 0.274);
+  }
+}
+@media only screen and (max-width: 750px){
+  #help{
+    left:20px;
+  }
+  .join{
+    left:20%;
+    
+    margin-top:170px;
+  }
+  #ddm{
+    background-color: rgba(255, 255, 255, 0.274);
+  }
+}
+/*   ~~~OLD CSS~~~
+
+
+
+/* #username{
+  border-style: none;
+  font-style: none;
+  outline-style: none;
+  font-size: 150%;
+  width: 80%;
+  border-radius: 1vh;
+  color: #b3dec1;
+  background: rgb(33, 1, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(33, 1, 36, 1) 37%,
+    rgba(117, 13, 55, 1) 87%
+  );
+} */
+/* #username:focus,
+#username:hover {
+  content: "  ";
+  transition: 500ms;
+  font-size: 160%;
+  background: rgb(33, 1, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(33, 1, 36, 1) 37%,
+    rgba(117, 13, 55, 1) 87%
+  );
+} */
+/* select,option{
+position: relative;
+border-style: none;
+font-style: none;
+outline-style: none;
+
+transition: ease 500ms;
+color:#B3DEC1;
+background:transparent;
+}
+option::before{
+    background-color: transparent;
+} */ 
+

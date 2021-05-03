@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Ubuntu+Mono&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+  
+}
+html{
+  overlow:hidden;
+}
+
+body {
+    background: linear-gradient(
+    127deg,
+    rgba(33, 1, 36, 1) 27%,
+    rgba(117, 13, 55, 1) 72%
+  );
+  background-size: 150% 150%;
+  animation: move 3000ms ease-in-out infinite;
+  background-position: center;
+  height: 100vh;
+  transition: 300ms ease-in-out;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.insider{
+
+  background: rgb(33, 1, 36);
+  background: linear-gradient(
+    302deg,
+    rgba(33, 1, 36, 1) 27%,
+    rgba(117, 13, 55, 1) 72%
+  );
+  width: 35%;
+  border-radius: 7vh;
+  height: 85vh;
+  position: inherit;
+  justify-content: center;
+  align-items: center;
+}
+h1{
+  font-family: 'Bungee', cursive;
+  color:#b3dec1;
+  position: relative;
+  font-weight: bold;
+  top:30px;
+  text-align: center;
+  cursor: default;
+}
+h3{
+  font-family: 'Bungee', cursive;
+  color:#b3dec1;
+  position: relative;
+  font-weight: bold;
+  top:30px;
+  text-align: center;font-family: 'Cutive Mono', monospace;
+  cursor: default;
+}
+#uname,#pass,#email{
+  border-style: none;
+  font-style: none;
+  outline-style: none;
+  font-size: 100%;
+  width: 80%;
+  border-radius: 1vh;
+  color: #b3dec1;
+  background: rgb(33, 1, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(33, 1, 36, 1) 37%,
+    rgba(117, 13, 55, 1) 87%
+  
+  );
+  position:relative;
+  top:100px;
+  left:30px;
+  height:9vh;
+}
+#pass{
+ 
+  font-family: 'Roboto Mono', monospace;
+  font-weight:bold;
+}
+#pass::placeholder{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight:normal;
+}
+#email{
+  top: 100px;
+}
+#pass:hover,#pass:focus,#uname:focus,#uname:hover,#email:hover,#email:focus{
+  font-size: 110%;
+  transform:scale(1.1);
+  transition: 500ms;
+}
+#submit{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: larger;
+  font-weight: normal;
+  border-style: none;
+  border-radius: 1vh;
+  padding: 15px 40px;
+  background: rgb(179, 222, 193);
+  background: linear-gradient(
+    127deg,
+    rgba(179, 222, 193, 1) 29%,
+    rgb(47, 199, 118) 99%
+  );
+  cursor: pointer;
+  position:relative;
+  top :136px; 
+  left:123px;
+
+}
+h1:hover{
+  
+  background: linear-gradient(
+    127deg,
+    rgba(179, 222, 193, 1) 29%,
+    rgb(62, 182, 118) 99%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 500ms;
+  transform:scale(1.1);
+  
+  background-size: 150% 150%;
+  animation: move 3000ms ease-in-out infinite;
+
+}
+#submit:hover{
+  background-size: 150% 150%;
+  animation: move 3000ms ease-in-out infinite;
+}
+#goback{
+  position:relative;
+  top:180px;
+  left:100px;
+  color:rgb(179, 222, 193);
+
+}
+#goback-a{
+  color:rgb(47, 199, 118);
+  text-decoration: none;
+  
+}
+#goback-a:hover{
+
+  transition: 100ms;
+  text-decoration: underline;
+  font-weight: bolder;
+}
+#person,#eye,#mail{
+  position:relative;
+  top: 109px;
+  font-size: xx-large;
+ color:rgb(173, 216, 160);
+ left:-10px;
+  cursor:default;
+}
+#eye{
+  
+  left:-15px;
+  cursor:pointer;
+}
+#mail{
+  top:107px;
+  left:-9px;
+}
+@keyframes move {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.modal-content{
+  background: linear-gradient(
+    127deg,
+    rgba(179, 222, 193, 1) 29%,
+    rgb(47, 199, 118) 99%
+  );
+  color:black;
+}
+#moda-button{
+  border-style: none;
+  background: linear-gradient(
+    302deg,
+    rgba(33, 1, 36, 1) 27%,
+    rgba(117, 13, 55, 1) 72%
+  );
+  width: 100px;
+}
+#moda-button2{
+  border-style:none;
+  background-color: rgb(97, 97, 97);
+}
+#moda-button:hover{
+  background-size: 150% 150%;
+  animation: move 3000ms ease-in-out infinite;
+}
+
+@media only screen and (max-width: 750px) {
+  h1{
+    background-size: 150% 150%;
+    animation: move 3000ms ease-in-out infinite;
+  }
+  .insider{
+    width:90%;
+  }
+  #submit{
+    left:90px;  
+    top:150px;
+    background-size: 150% 150%;
+    animation: move 3000ms ease-in-out infinite;
+  }
+  #goback{
+    left:55px;
+    top: 190px;
+  }
+
+} 
+
+@media only screen and (max-width: 360px){
+  #submit{
+    left: 80px;  
+    top:110px;
+    background-size: 150% 150%;
+    animation: move 3000ms ease-in-out infinite;
+  }
+  .insider{
+    height:90%;
+    width:95%;
+  }
+  #uname{
+    top:80px;
+    left:30px;
+  }
+  #email{
+   top:75px;
+  }
+  #pass{
+    top:70px;
+  }
+  #person,#eye,#mail{
+    top:85px;
+  }
+  #eye{
+    top:75px;
+  }
+
+ #goback{
+    left:55px;
+    top:160px;
+  }
+}
+@media only screen and (max-width: 330px){
+#uname,#pass,#email{
+  top:50px;
+
+}
+#person,#eye,#mail{
+  top:57px;
+}
+
+#submit{
+  top:75px;
+  left:75px;
+  padding: 10px 30px;
+}
+#goback{
+  top:90px;
+  left:40px;
+}
+}
+@media only screen and (min-width:800px) and (max-width:890px) {
+  .insider{
+    width:70%;
+  }
+  #uname,#pass,#email{
+    left:50px;
+    top:150px;
+}
+
+ #person{
+   top:165px;
+   font-size:3.0rem;
+ }
+ #mail{
+   top:160px;
+   font-size:2.7rem;
+ }
+ #eye{
+   top:160px;
+   font-size:2.7rem;
+ }
+ #submit{
+  top:200px;
+  left:175px;
+  
+}
+#goback{
+  top:270px;
+  left:140px;
+}
+
+}
+
