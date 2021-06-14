@@ -12,8 +12,7 @@
 
 ## Visit
 
-~This web application is hosted using ACI(Azure container instance) [here](http://centigrade-chatroom.southindia.azurecontainer.io:5000/).
-
+~This site is no longer hosted 😕
 
 
 ~To run the application localy clone this repo and cd into it and run 
